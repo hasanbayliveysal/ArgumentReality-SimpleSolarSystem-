@@ -27,15 +27,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //
 //        // Create a new scene
 //        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-//
+//#imageLiteral(resourceName: "earth.jpeg")
 //        // Set the scene to the view
 //        sceneView.scene = scene
-        let myWorld = createSphare(radius: 0.2, content: "earth", vector: SCNVector3(x: 0.1, y: 2, z: -0.1))
-        let myJupiter = createSphare(radius: 0.4, content: "juoiter", vector: SCNVector3(x: 0, y: 1, z: -2))
-        let myMars = createSphare(radius: 0.1, content: "mars", vector: SCNVector3(x: 0, y: 1, z: 0))
-        let myMercury = createSphare(radius: 0.05, content: "mercury", vector: SCNVector3(x: -1, y: 1, z: -1))
-        let myMoon = createSphare(radius: 0.15, content: "moon", vector: SCNVector3(x: 1, y: 1, z: -1))
-        let mySun = createSphare(radius: 0.5, content: "sun", vector: SCNVector3(x: 0, y: 2, z: -1))
+        let myWorld = createSphare(radius: 0.2, content: "earth.jpeg", vector: SCNVector3(x: 0.1, y: 0.1, z: -0.3))
+        let myJupiter = createSphare(radius: 0.4, content: "jupiter.jpeg", vector: SCNVector3(x: 0, y: 1, z: -2))
+        let myMars = createSphare(radius: 0.1, content: "mars.jpeg", vector: SCNVector3(x: 0, y: 1, z: 0))
+        let myMercury = createSphare(radius: 0.05, content: "mercury.jpeg", vector: SCNVector3(x: -1, y: 1, z: -1))
+        let myMoon = createSphare(radius: 0.15, content: "moon.jpeg", vector: SCNVector3(x: 1, y: 1, z: -1))
+        let mySun = createSphare(radius: 0.5, content: "sun.jpeg", vector: SCNVector3(x: 0, y: 2, z: -2))
         
         sceneView.scene.rootNode.addChildNode(myWorld)
         sceneView.scene.rootNode.addChildNode(myJupiter)
